@@ -33,8 +33,9 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "pyright",
-                "harper_ls",
+                -- "harper_ls",
                 "csharp_ls",
+                "jinja_lsp",
                 -- "omnisharp",
             },
             handlers = {
@@ -89,6 +90,14 @@ return {
                         capabilities = capabilities,
                     }
                 end,
+
+
+                -- ["jinja_lsp"] = function()
+                --     local lspconfig = require("lspconfig")
+                --     lspconfig.jinja_lsp.setup {
+                --         capabilities = capabilities,
+                --     }
+                -- end,
 
                 -- ["harper_ls"] = function()
                 --     local lspconfig = require("lspconfig")
